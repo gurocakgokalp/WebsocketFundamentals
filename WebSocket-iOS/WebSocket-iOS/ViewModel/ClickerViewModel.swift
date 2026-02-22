@@ -10,6 +10,7 @@ import Combine
 class ClickerViewModel: ObservableObject {
     @Published var clickerState: ClickerState = ClickerState(count: 0, connectionCount: 0)
     
+    
     private var webSocketTask: URLSessionWebSocketTask?
     
     func connect() {

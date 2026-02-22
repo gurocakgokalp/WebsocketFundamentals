@@ -26,6 +26,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
                 }
+                
                 HStack {
                     HStack {
                         Image(systemName: "number")
@@ -73,7 +74,6 @@ struct ContentView: View {
                     .shadow(radius: 10, x: 0, y: 5)
                 }
                 .padding()
-
             }
         }.onAppear {
             vm.connect()
